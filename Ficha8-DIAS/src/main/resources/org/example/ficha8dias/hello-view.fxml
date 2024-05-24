@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" prefHeight="470.0" prefWidth="654.0" spacing="20.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.ficha8dias.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <Pane prefHeight="566.0" prefWidth="726.0">
+      <children>
+         <VBox layoutX="52.0" layoutY="83.0" prefHeight="124.0" prefWidth="215.0">
+            <children>
+               <HBox prefHeight="62.0" prefWidth="130.0">
+                  <children>
+                     <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                        <children>
+                           <Label text="Celsius" />
+                        </children>
+                     </VBox>
+                     <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                        <children>
+                           <TextField fx:id="celsiusTxt" alignment="TOP_LEFT" />
+                        </children>
+                     </VBox>
+                  </children>
+               </HBox>
+               <HBox prefHeight="62.0" prefWidth="130.0">
+                  <children>
+                     <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                        <children>
+                           <Label text="Fahrenheit" />
+                        </children>
+                     </VBox>
+                     <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                        <children>
+                           <TextField fx:id="fahrenheitTxt" />
+                        </children>
+                     </VBox>
+                  </children>
+               </HBox>
+               <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                  <children>
+                     <Button fx:id="convBtn" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#convertMethod" text="Converter" textOverrun="WORD_ELLIPSIS">
+                        <HBox.margin>
+                           <Insets right="15.0" />
+                        </HBox.margin>
+                     </Button>
+                     <Button fx:id="clearBtn" alignment="TOP_LEFT" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#clearMethod" text="Limpar" textOverrun="WORD_ELLIPSIS" />
+                     <Button fx:id="exitBtn" alignment="TOP_LEFT" layoutX="64.0" layoutY="10.0" mnemonicParsing="false" onAction="#exitMethod" text="Sair" textOverrun="WORD_ELLIPSIS">
+                        <HBox.margin>
+                           <Insets left="15.0" />
+                        </HBox.margin>
+                     </Button>
+                  </children>
+               </HBox>
+            </children>
+         </VBox>
+      </children>
+   </Pane>
+</VBox>
